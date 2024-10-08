@@ -1,55 +1,56 @@
-body{
-    padding: 0px;
-    margin: 0px;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.a{
+.pp {
+    font-size: 14px;
+}
+
+.a {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.a:hover{
+.a:hover {
     opacity: 0.7;
 }
 
-.logo{
-    
+.logo {
     padding: 0;
     margin: 10px;
-   
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #23232e;
     height: 20vh;
-    
 }
 
-.meulogo{
+.meulogo {
     width: 30%;
-    
 }
 
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
 }
-.nav-list li{
+
+.nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
     cursor: pointer;
 }
 
-.mobile-menu div{
+.mobile-menu div {
     width: 32px;
     height: 2px;
     background-color: white;
@@ -58,15 +59,13 @@ nav{
 }
 
 @media (max-width: 999px) {
-   .a{
-    
-   }
     body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
-    .nav-list{
+
+    .nav-list {
         position: absolute;
         top: 17vh;
         right: 0;
@@ -79,84 +78,71 @@ nav{
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
-    .nav-list li{
-        margin-left: 0; opacity: 0;
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
     }
-    .mobile-menu{
+
+    .mobile-menu {
         display: block;
     }
-   
-    
-    .mobile-menu {
-        cursor: pointer;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        
-    }
-    
+
     .nav-list {
         list-style: none;
         padding: 0;
         display: none; /* Inicialmente escondido */
         text-align: center;
-        
     }
-    
+
     .nav-list.active {
         display: block; /* Mostra a lista quando ativa */
     }
-    
+
     .no-scroll {
         overflow: hidden; /* Remove a rolagem da página */
     }
-    
 }
 
-.nav-list.active{
+.nav-list.active {
     transform: translateX(0);
 }
-@keyframes navLinkFade{
-    from{
+
+@keyframes navLinkFade {
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
-.mobile-menu.active .line1{
-transform: rotate(-45deg) translate(-8px, 8px);
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-.mobile-menu.active .line2{
-  opacity: 0;  
+.mobile-menu.active .line2 {
+    opacity: 0;
 }
 
-.mobile-menu.active .line3{
+.mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
 
-
-.imgl{
+.imgl {
     width: 200px;
-    margin: 0px;
-    
-   }
+    margin: 0;
+}
 
-   .imagem{
-    
+.imagem {
     display: flex;
     justify-content: center;
     padding: 0;
-    
-    
-   }
+}
 
-
-   .den{
+.den {
     background-color: #C80000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: white;
@@ -167,17 +153,13 @@ transform: rotate(-45deg) translate(-8px, 8px);
     padding: 10px 40px;
     font-size: 17px;
     cursor: pointer;
-   }
+}
 
-
-   .den:hover{
+.den:hover {
     background-color: #ac0000;
-   }
+}
 
-
-   
-
-   .acom{
+.acom {
     background-color: #007BFF;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     color: white;
@@ -188,83 +170,67 @@ transform: rotate(-45deg) translate(-8px, 8px);
     padding: 10px 30px;
     font-size: 17px;
     cursor: pointer;
-   }
+}
 
-   .acom:hover{
+.acom:hover {
     background-color: #0053ac;
-   }
+}
 
-   p{
+p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px;
     font-size: 20px;
     line-height: 1.6;
-   }
+}
 
-  
-
-   .h11{
+.h11 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px;
     color: #217B96;
     font-size: 45px;
-   }
+    text-transform: uppercase;
+}
 
-   .h111{
+.h111 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 10px 20px;
     color: #217B96;
     font-size: 45px;
-   }
+}
 
+.iii {
+    width: 40%;
+    margin: 20px;
+}
 
-   .iii{
-    
-      width: 40%;
-      margin: 20px;
-      
-     
-   }
-   
-
-   .qua{
+.qua {
     display: flex;
     justify-content: center;
-    background-color:#23232e;
+    background-color: #23232e;
     padding: 100px;
-   }
+}
 
-   .bb{
+.bb {
     width: 100%;
-   }
-   
+}
 
-
-   .fgg{
+.fgg {
     width: 100%;
-   }
-
- 
-
-
-
-
+}
 
 .fixed-button {
-    position: fixed; 
-    bottom: 20px; 
-    right: 20px; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: #007BFF;
-    color: white; 
+    color: white;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
-
 }
 
 .fixed-button:hover {
@@ -277,35 +243,34 @@ transform: rotate(-45deg) translate(-8px, 8px);
 }
 
 @keyframes anima {
-  0%{
-    transform: scale(1);
-  }
-
-  100%{
-    transform: scale(1.05);
-  }
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
 }
 
-.acom:hover{
-  animation-name: anima;
+.acom:hover {
+    animation-name: anima;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-.den:hover{
-  animation-name: anima;
+.den:hover {
+    animation-name: anima;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-li:hover{
-color: white;
+li:hover {
+    color: white;
 }
 
-.tatata{
-  color:#007BFF ;
+.tatata {
+    color: #007BFF;
 }
